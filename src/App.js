@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Feed from './components/Feed';
+import Sidebar from './components/Sidebar';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <div className='flex flex-row'>
+        <div className='flex flex-col ml-10 mt-3' style={{width: '80%'}}>
+          <Carousel/>
+          <Feed/>
+        </div>
+        <Sidebar/>
+      </div>
+      
     </div>
   );
 }
