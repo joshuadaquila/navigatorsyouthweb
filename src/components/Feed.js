@@ -20,8 +20,14 @@ const Feed = () =>{
         </div>
 
         <div className="p-4">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+          <p>Welcome to the official website of Navigators Mini-Association Youth Department!
+
+Thank you for visiting. We're excited to bring you updates, announcements, and events right here.
+
+Please Note: Our website is currently under development. We appreciate your patience as we work to create the best experience for you.
+
+Stay tuned for more updates coming soon!
+          </p>
         </div>
 
       </div>
