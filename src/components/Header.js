@@ -1,29 +1,28 @@
 import aylogo from '../resources/AY_Logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRss, faBullhorn, faCalendar } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 const Header= () => {
   return(
-    <div className="flex p-3 shadow-lg">
+    <div className="grid grid-cols-2  gap-2 p-3 shadow-lg" style={{gridTemplateColumns: '1fr 2fr'}}>
 
-      <div className='flex'>
+      <div className='grid grid-cols-1 justify-center items-center'>
         <img className='w-28' src={aylogo} alt='AY Logo'></img>
-        <div className='flex flex-col justify-center ml-2'>
-          <h3 className='truncate w-full'>Navigators Mini-Association</h3>
-          <h3 className='truncate w-full'>Youth Department</h3>
-        </div>
+          <p className='text-xs ml-2'>Navigators MNA</p>
+          <p className='text-xs ml-2'>Youth Department</p>
       </div>
 
       
-      <div className='flex flex-1 justify-center items-center'>
+      <div className='flex justify-center items-center mr-4'>
         <nav>
-          <ul className='flex space-x-10 justify-center items-center'>
-            <li><a className='headerlink flex justify-center items-center' href='#'>
-              <FontAwesomeIcon icon={faRss} className='m-2'/>Feed</a></li>
-            <li><a className='headerlink flex justify-center items-center' href='#'>
-              <FontAwesomeIcon icon={faBullhorn} className='m-2'/>Announcement</a></li>
-            <li><a className='headerlink flex justify-center items-center' href='#'>
-              <FontAwesomeIcon icon={faCalendar} className='m-2'/>Events</a></li>
+          <ul className='grid grid-cols-3' style={{gridTemplateColumns: '1fr 2fr 1fr'}}>
+            <li><Link className='headerlink flex flex-col justify-center items-center' to='/'>
+              <FontAwesomeIcon icon={faRss} className='m-2'/>Feed</Link></li>
+            <li><Link className='headerlink flex flex-col justify-center items-center' to='/announcement'>
+              <FontAwesomeIcon icon={faBullhorn} className='m-2'/>Announcement</Link></li>
+            <li><Link className='headerlink flex flex-col justify-center items-center' to='/events'>
+              <FontAwesomeIcon icon={faCalendar} className='m-2'/>Events</Link></li>
           </ul>
         </nav>
       </div>

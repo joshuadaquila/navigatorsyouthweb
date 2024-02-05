@@ -25,9 +25,6 @@ const Feed = () =>{
         </div>
 
       </div>
-      <div className="flex flex-1 bg-slate-500">
-        <h1>Photos Container</h1>
-      </div>
     </div>
   )
 }
