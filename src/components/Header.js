@@ -8,7 +8,7 @@ const Header= () => {
     <div className="grid grid-cols-2  gap-2 p-3 shadow-lg" style={{gridTemplateColumns: '1fr 2fr'}}>
 
       <div className='grid grid-cols-1 justify-center items-center'>
-        <img className='w-28' src={aylogo} alt='AY Logo'></img>
+        <img className='w-24' src={aylogo} alt='AY Logo'></img>
           <p className='text-xs ml-2'>Navigators MNA</p>
           <p className='text-xs ml-2'>Youth Department</p>
       </div>
@@ -18,11 +18,11 @@ const Header= () => {
         <nav>
           <ul className='grid grid-cols-3' style={{gridTemplateColumns: '1fr 2fr 1fr'}}>
             <li><Link className='headerlink flex flex-col justify-center items-center' to='/'>
-              <FontAwesomeIcon icon={faRss} className='m-2'/>Feed</Link></li>
+              <FontAwesomeIcon icon={faRss} className='m-2'/></Link></li>
             <li><Link className='headerlink flex flex-col justify-center items-center' to='/announcement'>
-              <FontAwesomeIcon icon={faBullhorn} className='m-2'/>Announcement</Link></li>
+              <FontAwesomeIcon icon={faBullhorn} className='m-2'/></Link></li>
             <li><Link className='headerlink flex flex-col justify-center items-center' to='/events'>
-              <FontAwesomeIcon icon={faCalendar} className='m-2'/>Events</Link></li>
+              <FontAwesomeIcon icon={faCalendar} className='m-2'/></Link></li>
           </ul>
         </nav>
       </div>
