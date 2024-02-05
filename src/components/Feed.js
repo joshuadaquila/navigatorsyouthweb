@@ -1,5 +1,5 @@
 import Carousel from "./Carousel";
-import profilepic from '../resources/img1.jpg'
+import profilepic from '../resources/profilepic.jpg'
 
 const Feed = () =>{
   return(

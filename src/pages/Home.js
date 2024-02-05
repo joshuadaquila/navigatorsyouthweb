@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar";
 const Home = () => {
   return(
     <div className='flex flex-col justify-center items-center'>
-      <div  style={{width: '90%'}}>
+      <div className="mt-4"  style={{width: '90%'}}>
         <Carousel/>
         <Feed/>
       </div>
